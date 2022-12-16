@@ -98,6 +98,3 @@ class ResUnet(nn.Module):
 
         return output
     
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = ResUnet(1)
-model = model.to(device)
